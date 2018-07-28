@@ -1,0 +1,117 @@
+body 
+    width: 100% 
+    max-width: 100%
+
+.r
+    display: flex 
+    flex-direction: row 
+    flex-wrap: wrap 
+    margin-left: calc(-1*var(--gutter)/2)
+    margin-right: calc(-1*var(--gutter)/2)
+    &:after 
+        clear: both
+        content: '' 
+        display: table
+*[class^='c-']
+    padding: 0 calc(var(--gutter)/2) calc(var(--gutter))
+    min-height: 1px
+
+.c-0 
+    flex: 1 0 0
+
+$i: 1
+@while $i <= 16
+    .c-#{$i}
+        flex: 0 0 calc(#{$i*100%}/var(--cols))
+        max-width: calc(#{$i*100%}/var(--cols))
+    .ord-#{$i}
+        order: $i
+    $i: $i + 1
++mp 
+    .c-0-mp
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-mp
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-mp
+            order: $i
+        $i: $i + 1
++ml 
+    .c-0-ml
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-ml
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-ml
+            order: $i
+        $i: $i + 1
++m
+    .c-0-m
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-m
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-m
+            order: $i
+        $i: $i + 1
++tp
+    .c-0-tp
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-tp
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-tp
+            order: $i
+        $i: $i + 1
++tl
+    .c-0-tl
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-tl
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-tl
+            order: $i
+        $i: $i + 1
++t
+    .c-0-t
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-t
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-t
+            order: $i
+        $i: $i + 1
++l 
+    .c-0-l
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-l
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-l
+            order: $i
+        $i: $i + 1
++hd
+    .c-0-hd
+        flex: 1 0 0
+    $i: 1
+    @while $i <= 16
+        .c-#{$i}-hd
+            flex: 0 0 calc(#{$i*100%}/var(--cols))
+            max-width: calc(#{$i*100%}/var(--cols))
+        .ord-#{$i}-hd
+            order: $i
+        $i: $i + 1

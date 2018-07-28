@@ -1,0 +1,51 @@
+// BREAKPOINTS
+// mobile portrait
+$mobilePortraitMin: 0px 
+$mobilePortraitMax: 420px
+// mobile landscape
+$mobileLandscapeMin: ($mobilePortraitMax+1)
+$mobileLandscapeMax: 767px
+// tablet portrait
+$tabletPortraitMin: ($mobileLandscapeMax+1)
+$tabletPortraitMax: 992px
+// tablet landscape
+$tabletLandscapeMin: ($tabletPortraitMax+1)
+$tabletLandscapeMax: 1199px
+// laptop / desktop 
+$laptopMin: ($tabletLandscapeMax+1)
+$laptopMax: 1599px
+// high-def desktop
+$hdMin: ($laptopMax+1)
+
+// MIXINS    
+=mp
+    @media (min-width: $mobilePortraitMin) and (max-width: $mobilePortraitMax) 
+        @content 
+=ml 
+    @media (min-width: $mobileLandscapeMin) and (max-width: $mobileLandscapeMax) 
+        @content 
+=m
+    @media (min-width: $mobilePortraitMin) and (max-width: $mobileLandscapeMax) 
+        @content 
+=tp
+    @media (min-width: $tabletPortraitMin) and (max-width: $tabletPortraitMax) 
+        @content 
+=tl
+    @media (min-width: $tabletLandscapeMin) and (max-width: $tabletLandscapeMax) 
+        @content 
+=t
+    @media (min-width: $tabletPortraitMin) and (max-width: $tabletLandscapeMax) 
+        @content 
+=l
+    @media (min-width: $laptopMin) and (max-width: $laptopMax) 
+        @content 
+=hd
+    @media (min-width: $hdMin)
+        @content 
+
+// FUNCTIONS
+@function pow($num, $times)
+    $val: 1
+    @for $i from 1 through $times
+        $val: $val * #{$num}
+    @return #{$val}

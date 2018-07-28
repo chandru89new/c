@@ -1,0 +1,11 @@
+$i: 0
+@while $i <= 5 
+    @if $i == 0
+        .fs-0
+            font-size: var(--baseSize)
+    @else 
+        .fs-#{$i}
+            font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+        .fs--#{$i}
+            font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+    $i: $i + 1

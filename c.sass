@@ -1,0 +1,29 @@
+@import 'src/reset.sass'
+@import 'src/variables.sass'
+@import 'src/grid.sass'
+@import 'src/displacement.sass'
+@import 'src/alignment.sass'
+@import 'src/flex.sass'
+@import 'src/typography.sass'
+@import 'src/visibility.sass'
+@import 'src/colors.sass'
+@import 'src/borders.sass'
+
+*:root
+    --baseSize: 16px
+    --cols: 12
+    --gutter: var(--baseSize)
+    --scale: 1.25
+    --lineHeight: 1.7
+    --colorBase: hsla(353, 57%, 47%, 1)
+    --colorLight: hsla(353, 57%, 77%, 1)
+    --colorLightest: hsla(353, 57%, 97%, 1)
+    --colorDark: hsla(353, 57%, 37%, 1)
+    --colorDarkest: hsla(353, 57%, 7%, 1)
+    --colorHilite: hsla(31, 100%, 48%, 1)
+    --borderRadius: 4px
+    --borderSize: 1px
+
+body 
+    font-size: var(--baseSize)
+    line-height: var(--lineHeight)

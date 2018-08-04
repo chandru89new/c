@@ -9,3 +9,100 @@ $i: 0
         .fs--#{$i}
             font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
     $i: $i + 1
+
++mp
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-mp
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-mp
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-mp
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++ml
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-ml
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-ml
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-ml
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++m 
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-m
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-m
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-m
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++tp
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-tp
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-tp
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-tp
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++tl
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-tl
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-tl
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-tl
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++t
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-t
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-t
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-t
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++l
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-l
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-l
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-l
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1
++hd
+    $i: 0
+    @while $i <= 5 
+        @if $i == 0
+            .fs-0-hd
+                font-size: var(--baseSize)
+        @else 
+            .fs-#{$i}-hd
+                font-size: calc(var(--baseSize) * (#{pow(var(--scale), $i)}))
+            .fs--#{$i}-hd
+                font-size: calc(var(--baseSize) / (#{pow(var(--scale), $i)}))
+        $i: $i + 1

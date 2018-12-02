@@ -47,5 +47,5 @@ $hdMin: ($laptopMax+1)
 @function pow($num, $times)
     $val: 1
     @for $i from 1 through $times
-        $val: $val * #{$num}
+        $val: #{$val} + '*' + #{$num}
     @return #{$val}

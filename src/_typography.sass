@@ -1,0 +1,134 @@
+@for $i from 0 through 10
+  @if $i == 5
+    .fs-#{$i}
+      font-size: var(--baseSize)
+    .ltrSpc-#{$i}
+      letter-spacing: 0
+  @if $i < 5
+    $j: 5 - $i
+    .fs-#{$i}
+      font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+  @if $i > 5
+    $j: $i - 5
+    .fs-#{$i}
+      font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++mp
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-mp
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-mp
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-mp
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-mp
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++ml
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-ml
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-ml
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-ml
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-ml
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++m
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-m
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-m
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-m
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-m
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++tp
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-tp
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-tp
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-tp
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-tp
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++tl
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-tl
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-tl
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-tl
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-tl
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++t
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-t
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-t
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-t
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-t
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++l
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-l
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-l
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-l
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-l
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )
++hd
+  @for $i from 0 through 10
+    @if $i == 5
+      .fs-#{$i}-hd
+        font-size: var(--baseSize)
+      .ltrSpc-#{$i}-hd
+        letter-spacing: 0
+    @if $i < 5
+      $j: 5 - $i
+      .fs-#{$i}-hd
+        font-size: calc( var(--baseSize) / (#{ pow(var(--scale), $j) }) )
+    @if $i > 5
+      $j: $i - 5
+      .fs-#{$i}-hd
+        font-size: calc( var(--baseSize) * (#{ pow(var(--scale), $j) }) )

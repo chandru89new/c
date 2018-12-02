@@ -1,0 +1,404 @@
+@for $i from 0 through 20
+  $j: $i*5 + '%'
+  .clrP-#{$i*5}
+    color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+  .bgClrP-#{$i*5}
+    background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+  .brdClrP-#{$i*5}
+    border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+  .clrS-#{$i*5}
+    color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+  .bgClrS-#{$i*5}
+    background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+  .brdClrS-#{$i*5}
+    border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+  .clrT-#{$i*5}
+    color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+  .bgClrT-#{$i*5}
+    background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+  .brdClrT-#{$i*5}
+    border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+  .clrSuc-#{$i*5}
+    color: hsla(var(--successHue), 80%, #{$j}, 1)  
+  .bgClrSuc-#{$i*5}
+    background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+  .brdClrSuc-#{$i*5}
+    border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+  .clrErr-#{$i*5}
+    color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+  .bgClrErr-#{$i*5}
+    background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+  .brdClrErr-#{$i*5}
+    border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+  .clrInf-#{$i*5}
+    color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+  .bgClrInf-#{$i*5}
+    background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+  .brdClrInf-#{$i*5}
+    border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+  .clrWar-#{$i*5}
+    color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+  .bgClrWar-#{$i*5}
+    background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+  .brdClrWar-#{$i*5}
+    border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++mp
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-mp
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-mp
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-mp
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-mp
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-mp
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-mp
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-mp
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-mp
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-mp
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-mp
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-mp
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-mp
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-mp
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-mp
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-mp
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-mp
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-mp
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-mp
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-mp
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-mp
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-mp
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++ml
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-ml
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-ml
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-ml
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-ml
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-ml
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-ml
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-ml
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-ml
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-ml
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-ml
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-ml
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-ml
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-ml
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-ml
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-ml
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-ml
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-ml
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-ml
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-ml
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-ml
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-ml
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++m
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-m
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-m
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-m
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-m
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-m
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-m
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-m
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-m
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-m
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-m
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-m
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-m
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-m
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-m
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-m
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-m
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-m
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-m
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-m
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-m
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-m
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++tp
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-tp
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-tp
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-tp
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-tp
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-tp
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-tp
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-tp
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-tp
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-tp
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-tp
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-tp
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-tp
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-tp
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-tp
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-tp
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-tp
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-tp
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-tp
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-tp
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-tp
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-tp
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++tl
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-tl
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-tl
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-tl
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-tl
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-tl
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-tl
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-tl
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-tl
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-tl
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-tl
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-tl
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-tl
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-tl
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-tl
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-tl
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-tl
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-tl
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-tl
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-tl
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-tl
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-tl
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++t
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-t
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-t
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-t
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-t
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-t
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-t
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-t
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-t
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-t
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-t
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-t
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-t
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-t
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-t
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-t
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-t
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-t
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-t
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-t
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-t
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-t
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++l
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-l
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-l
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-l
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-l
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-l
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-l
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-l
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-l
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-l
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-l
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-l
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-l
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-l
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-l
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-l
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-l
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-l
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-l
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-l
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-l
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-l
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)
++hd
+  @for $i from 0 through 20
+    $j: $i*5 + '%'
+    .clrP-#{$i*5}-hd
+      color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .bgClrP-#{$i*5}-hd
+      background-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .brdClrP-#{$i*5}-hd
+      border-color: hsla(var(--primaryHue), 80%, #{$j}, 1)  
+    .clrS-#{$i*5}-hd
+      color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .bgClrS-#{$i*5}-hd
+      background-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .brdClrS-#{$i*5}-hd
+      border-color: hsla(var(--secondaryHue), 80%, #{$j}, 1)  
+    .clrT-#{$i*5}-hd
+      color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .bgClrT-#{$i*5}-hd
+      background-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .brdClrT-#{$i*5}-hd
+      border-color: hsla(var(--tertiaryHue), 80%, #{$j}, 1)  
+    .clrSuc-#{$i*5}-hd
+      color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .bgClrSuc-#{$i*5}-hd
+      background-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .brdClrSuc-#{$i*5}-hd
+      border-color: hsla(var(--successHue), 80%, #{$j}, 1)  
+    .clrErr-#{$i*5}-hd
+      color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .bgClrErr-#{$i*5}-hd
+      background-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .brdClrErr-#{$i*5}-hd
+      border-color: hsla(var(--errorHue), 80%, #{$j}, 1)  
+    .clrInf-#{$i*5}-hd
+      color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .bgClrInf-#{$i*5}-hd
+      background-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .brdClrInf-#{$i*5}-hd
+      border-color: hsla(var(--infoHue), 80%, #{$j}, 1)  
+    .clrWar-#{$i*5}-hd
+      color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .bgClrWar-#{$i*5}-hd
+      background-color: hsla(var(--warningHue), 80%, #{$j}, 1)  
+    .brdClrWar-#{$i*5}-hd
+      border-color: hsla(var(--warningHue), 80%, #{$j}, 1)

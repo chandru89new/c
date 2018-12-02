@@ -1,0 +1,602 @@
+.m-a
+  margin: auto 
+.m-i
+  margin: initial
+.mt-a
+  margin-top: auto 
+.mt-i
+  margin-top: initial
+.mr-a
+  margin-right: auto 
+.mr-i
+  margin-right: initial
+.mb-a
+  margin-bottom: auto 
+.mb-i
+  margin-bottom: initial
+.ml-a
+  margin-left: auto 
+.ml-i
+  margin-left: initial
+@for $i from 1 through 10
+  @if $i < 5
+    $j: 5 - $i
+    .m-#{$i}
+      margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    .mt-#{$i}
+      margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    .mr-#{$i}
+      margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    .mb-#{$i}
+      margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    .ml-#{$i}
+      margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+  @else if $i == 5
+    .m-#{$i}
+      margin: var(--baseSize)
+    .mt-#{$i}
+      margin-top: var(--baseSize)
+    .mr-#{$i}
+      margin-right: var(--baseSize)
+    .mb-#{$i}
+      margin-bottom: var(--baseSize)
+    .ml-#{$i}
+      margin-left: var(--baseSize)
+  @else if $i > 5
+    $j: $i - 5
+    .m-#{$i}
+      margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+    .mt-#{$i}
+      margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+    .mr-#{$i}
+      margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+    .mb-#{$i}
+      margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+    .ml-#{$i}
+      margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+.m-0
+  margin: 0
+.mt-0
+  margin-left: 0
+.mr-0
+  margin-right: 0
+.mb-0
+  margin-bottom: 0
+.ml-0
+  margin-left: 0
++mp
+  .m-a-mp
+    margin: auto 
+  .m-i-mp
+    margin: initial
+  .mt-a-mp
+    margin-top: auto 
+  .mt-i-mp
+    margin-top: initial
+  .mr-a-mp
+    margin-right: auto 
+  .mr-i-mp
+    margin-right: initial
+  .mb-a-mp
+    margin-bottom: auto 
+  .mb-i-mp
+    margin-bottom: initial
+  .ml-a-mp
+    margin-left: auto 
+  .ml-i-mp
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-mp
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-mp
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-mp
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-mp
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-mp
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-mp
+        margin: var(--baseSize)
+      .mt-#{$i}-mp
+        margin-top: var(--baseSize)
+      .mr-#{$i}-mp
+        margin-right: var(--baseSize)
+      .mb-#{$i}-mp
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-mp
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-mp
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-mp
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-mp
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-mp
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-mp
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-mp
+    margin: 0
+  .mt-0-mp
+    margin-left: 0
+  .mr-0-mp
+    margin-right: 0
+  .mb-0-mp
+    margin-bottom: 0
+  .ml-0-mp
+    margin-left: 0
++ml
+  .m-a-ml
+    margin: auto 
+  .m-i-ml
+    margin: initial
+  .mt-a-ml
+    margin-top: auto 
+  .mt-i-ml
+    margin-top: initial
+  .mr-a-ml
+    margin-right: auto 
+  .mr-i-ml
+    margin-right: initial
+  .mb-a-ml
+    margin-bottom: auto 
+  .mb-i-ml
+    margin-bottom: initial
+  .ml-a-ml
+    margin-left: auto 
+  .ml-i-ml
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-ml
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-ml
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-ml
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-ml
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-ml
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-ml
+        margin: var(--baseSize)
+      .mt-#{$i}-ml
+        margin-top: var(--baseSize)
+      .mr-#{$i}-ml
+        margin-right: var(--baseSize)
+      .mb-#{$i}-ml
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-ml
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-ml
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-ml
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-ml
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-ml
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-ml
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-ml
+    margin: 0
+  .mt-0-ml
+    margin-left: 0
+  .mr-0-ml
+    margin-right: 0
+  .mb-0-ml
+    margin-bottom: 0
+  .ml-0-ml
+    margin-left: 0
++m
+  .m-a-m
+    margin: auto 
+  .m-i-m
+    margin: initial
+  .mt-a-m
+    margin-top: auto 
+  .mt-i-m
+    margin-top: initial
+  .mr-a-m
+    margin-right: auto 
+  .mr-i-m
+    margin-right: initial
+  .mb-a-m
+    margin-bottom: auto 
+  .mb-i-m
+    margin-bottom: initial
+  .ml-a-m
+    margin-left: auto 
+  .ml-i-m
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-m
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-m
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-m
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-m
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-m
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-m
+        margin: var(--baseSize)
+      .mt-#{$i}-m
+        margin-top: var(--baseSize)
+      .mr-#{$i}-m
+        margin-right: var(--baseSize)
+      .mb-#{$i}-m
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-m
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-m
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-m
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-m
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-m
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-m
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-m
+    margin: 0
+  .mt-0-m
+    margin-left: 0
+  .mr-0-m
+    margin-right: 0
+  .mb-0-m
+    margin-bottom: 0
+  .ml-0-m
+    margin-left: 0
++tp
+  .m-a-tp
+    margin: auto 
+  .m-i-tp
+    margin: initial
+  .mt-a-tp
+    margin-top: auto 
+  .mt-i-tp
+    margin-top: initial
+  .mr-a-tp
+    margin-right: auto 
+  .mr-i-tp
+    margin-right: initial
+  .mb-a-tp
+    margin-bottom: auto 
+  .mb-i-tp
+    margin-bottom: initial
+  .ml-a-tp
+    margin-left: auto 
+  .ml-i-tp
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-tp
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-tp
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-tp
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-tp
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-tp
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-tp
+        margin: var(--baseSize)
+      .mt-#{$i}-tp
+        margin-top: var(--baseSize)
+      .mr-#{$i}-tp
+        margin-right: var(--baseSize)
+      .mb-#{$i}-tp
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-tp
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-tp
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-tp
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-tp
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-tp
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-tp
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-tp
+    margin: 0
+  .mt-0-tp
+    margin-left: 0
+  .mr-0-tp
+    margin-right: 0
+  .mb-0-tp
+    margin-bottom: 0
+  .ml-0-tp
+    margin-left: 0
++tl
+  .m-a-tl
+    margin: auto 
+  .m-i-tl
+    margin: initial
+  .mt-a-tl
+    margin-top: auto 
+  .mt-i-tl
+    margin-top: initial
+  .mr-a-tl
+    margin-right: auto 
+  .mr-i-tl
+    margin-right: initial
+  .mb-a-tl
+    margin-bottom: auto 
+  .mb-i-tl
+    margin-bottom: initial
+  .ml-a-tl
+    margin-left: auto 
+  .ml-i-tl
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-tl
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-tl
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-tl
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-tl
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-tl
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-tl
+        margin: var(--baseSize)
+      .mt-#{$i}-tl
+        margin-top: var(--baseSize)
+      .mr-#{$i}-tl
+        margin-right: var(--baseSize)
+      .mb-#{$i}-tl
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-tl
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-tl
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-tl
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-tl
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-tl
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-tl
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-tl
+    margin: 0
+  .mt-0-tl
+    margin-left: 0
+  .mr-0-tl
+    margin-right: 0
+  .mb-0-tl
+    margin-bottom: 0
+  .ml-0-tl
+    margin-left: 0
++t
+  .m-a-t
+    margin: auto 
+  .m-i-t
+    margin: initial
+  .mt-a-t
+    margin-top: auto 
+  .mt-i-t
+    margin-top: initial
+  .mr-a-t
+    margin-right: auto 
+  .mr-i-t
+    margin-right: initial
+  .mb-a-t
+    margin-bottom: auto 
+  .mb-i-t
+    margin-bottom: initial
+  .ml-a-t
+    margin-left: auto 
+  .ml-i-t
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-t
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-t
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-t
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-t
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-t
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-t
+        margin: var(--baseSize)
+      .mt-#{$i}-t
+        margin-top: var(--baseSize)
+      .mr-#{$i}-t
+        margin-right: var(--baseSize)
+      .mb-#{$i}-t
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-t
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-t
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-t
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-t
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-t
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-t
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-t
+    margin: 0
+  .mt-0-t
+    margin-left: 0
+  .mr-0-t
+    margin-right: 0
+  .mb-0-t
+    margin-bottom: 0
+  .ml-0-t
+    margin-left: 0
++l
+  .m-a-l
+    margin: auto 
+  .m-i-l
+    margin: initial
+  .mt-a-l
+    margin-top: auto 
+  .mt-i-l
+    margin-top: initial
+  .mr-a-l
+    margin-right: auto 
+  .mr-i-l
+    margin-right: initial
+  .mb-a-l
+    margin-bottom: auto 
+  .mb-i-l
+    margin-bottom: initial
+  .ml-a-l
+    margin-left: auto 
+  .ml-i-l
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-l
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-l
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-l
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-l
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-l
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-l
+        margin: var(--baseSize)
+      .mt-#{$i}-l
+        margin-top: var(--baseSize)
+      .mr-#{$i}-l
+        margin-right: var(--baseSize)
+      .mb-#{$i}-l
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-l
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-l
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-l
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-l
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-l
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-l
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-l
+    margin: 0
+  .mt-0-l
+    margin-left: 0
+  .mr-0-l
+    margin-right: 0
+  .mb-0-l
+    margin-bottom: 0
+  .ml-0-l
+    margin-left: 0
++hd
+  .m-a-hd
+    margin: auto 
+  .m-i-hd
+    margin: initial
+  .mt-a-hd
+    margin-top: auto 
+  .mt-i-hd
+    margin-top: initial
+  .mr-a-hd
+    margin-right: auto 
+  .mr-i-hd
+    margin-right: initial
+  .mb-a-hd
+    margin-bottom: auto 
+  .mb-i-hd
+    margin-bottom: initial
+  .ml-a-hd
+    margin-left: auto 
+  .ml-i-hd
+    margin-left: initial
+  @for $i from 1 through 10
+    @if $i < 5
+      $j: 5 - $i
+      .m-#{$i}-hd
+        margin: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-hd
+        margin-top: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-hd
+        margin-right: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-hd
+        margin-bottom: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-hd
+        margin-left: calc( var(--baseSize) / (#{pow( var(--scale),  $j)}) )
+    @else if $i == 5
+      .m-#{$i}-hd
+        margin: var(--baseSize)
+      .mt-#{$i}-hd
+        margin-top: var(--baseSize)
+      .mr-#{$i}-hd
+        margin-right: var(--baseSize)
+      .mb-#{$i}-hd
+        margin-bottom: var(--baseSize)
+      .ml-#{$i}-hd
+        margin-left: var(--baseSize)
+    @else if $i > 5
+      $j: $i - 5
+      .m-#{$i}-hd
+        margin: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mt-#{$i}-hd
+        margin-top: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mr-#{$i}-hd
+        margin-right: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .mb-#{$i}-hd
+        margin-bottom: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+      .ml-#{$i}-hd
+        margin-left: calc( var(--baseSize) * (#{pow( var(--scale),  $j)}) )
+  .m-0-hd
+    margin: 0
+  .mt-0-hd
+    margin-left: 0
+  .mr-0-hd
+    margin-right: 0
+  .mb-0-hd
+    margin-bottom: 0
+  .ml-0-hd
+    margin-left: 0
